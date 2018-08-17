@@ -10,10 +10,12 @@ From : https://www.defcon.org/html/defcon-26/dc-26-workshops.html#botwicz
 
 ```$ git clone https://github.com/cpuu/afl-fuzzing-training.git```
 
-## Building
+## Building 
 ```$ cd afl-fuzzing-training/ ```
 
 ```$ sudo docker build -t fuzzing .```
+
+( ~ 40 min)
 
 ## Running
 
