@@ -6,6 +6,8 @@ Original Link : https://github.com/wrauner/afl-fuzzing-training
 From : https://www.defcon.org/html/defcon-26/dc-26-workshops.html#botwicz
 
 ## Download
+```$ $ sudo apt-get install docker.io ```
+
 ```$ git clone https://github.com/cpuu/afl-fuzzing-training.git```
 
 ## Building
