@@ -2,6 +2,9 @@
 
 GLHF
 
+## Download
+```$ git clone https://github.com/cpuu/afl-fuzzing-training.git```
+
 ## Building
 
 ```docker build -t fuzzing .```
