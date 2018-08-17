@@ -13,13 +13,13 @@ From : https://www.defcon.org/html/defcon-26/dc-26-workshops.html#botwicz
 ## Building
 ```$ cd afl-fuzzing-training/ ```
 
-```$ docker build -t fuzzing .```
+```$ sudo docker build -t fuzzing .```
 
 ## Running
 
-```docker run -it -v $(pwd)/workshop:/home/root/fuzz/workshop fuzzing```
+```$ docker run -it -v $(pwd)/workshop:/home/root/fuzz/workshop fuzzing```
 
 ## Open another console window
 
-```docker exec -it <container_id> bash```
+```$ docker exec -it <container_id> bash```
 
