@@ -10,7 +10,8 @@ From : https://www.defcon.org/html/defcon-26/dc-26-workshops.html#botwicz
 
 ## Building
 ```$ cd afl-fuzzing-training/ ```
-```docker build -t fuzzing .```
+
+```$ docker build -t fuzzing .```
 
 ## Running
 
