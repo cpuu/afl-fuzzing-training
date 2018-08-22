@@ -33,3 +33,5 @@ From : https://www.defcon.org/html/defcon-26/dc-26-workshops.html#botwicz
 
 ```$ sudo docker exec -it ca702b5dbf4a bash```
 
+## Stop docker container
+```$ docker stop ca702b5dbf4a```
