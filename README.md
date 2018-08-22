@@ -35,3 +35,8 @@ From : https://www.defcon.org/html/defcon-26/dc-26-workshops.html#botwicz
 
 ## Stop docker container
 ```$ docker stop ca702b5dbf4a```
+
+## Start & Attach docker container
+```$ docker start ca702b5dbf4a```
+
+```$ docker attach ca702b5dbf4a```
