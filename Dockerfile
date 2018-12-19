@@ -83,12 +83,12 @@ RUN wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | sh
 RUN echo "add-auto-load-safe-path /home/root/fuzz/.gdbinit" >> /root/.gdbinit
 
 #install driller
-RUN cp -r afl-2.52b driller
-WORKDIR /home/root/fuzz/install/driller
-RUN pip install git+https://github.com/angr/cle
-RUN pip install git+https://github.com/angr/angr
-RUN pip install git+https://github.com/angr/tracer
-RUN pip install git+https://github.com/shellphish/driller
+#RUN cp -r afl-2.52b driller
+#WORKDIR /home/root/fuzz/install/driller
+#RUN pip install git+https://github.com/angr/cle
+#RUN pip install git+https://github.com/angr/angr
+#RUN pip install git+https://github.com/angr/tracer
+#RUN pip install git+https://github.com/shellphish/driller
 
 WORKDIR /home/root/fuzz
 
