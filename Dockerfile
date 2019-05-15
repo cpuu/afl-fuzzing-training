@@ -9,7 +9,7 @@ ENV GOPATH=/home/root/go
 RUN apt-get update && apt-get install -y wget \
     build-essential git clang-3.8 golang-go python-setuptools cython libini-config-dev \
     lcov gnuplot graphviz doxygen libglib2.0-dev automake sudo texinfo libtool-bin bison \
-    gdb python-pip screen vim netcat man
+    gdb python-pip screen vim netcat man libseccomp-dev
 
 WORKDIR /home/root/fuzz/install
 RUN if [ -z "$(ls -A /home/root/fuzz/install)" ] ; then \
