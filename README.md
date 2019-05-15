@@ -20,7 +20,7 @@ From : https://www.defcon.org/html/defcon-26/dc-26-workshops.html#botwicz
 
 ## Running
 
-```$ docker run -it -v $(pwd)/workshop:/home/root/fuzz/workshop fuzzing```
+```$ sudo docker run -it -v $(pwd)/workshop:/home/root/fuzz/workshop fuzzing```
 
 ## Open another console window
 ```$ sudo docker ps```
