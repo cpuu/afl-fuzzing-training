@@ -13,8 +13,8 @@ RUN apt-get update && apt-get install -y wget \
 
 WORKDIR /home/root/fuzz/install
 RUN if [ -z "$(ls -A /home/root/fuzz/install)" ] ; then \
-    wget http://lcamtuf.coredump.cx/afl/releases/afl-2.52b.tgz \
-    && tar -xf afl-2.52b.tgz && rm afl-2.52b.tgz && \
+    wget https://github.com/google/AFL/archive/v2.56b.tar.gz \
+    && tar -zxf v2.56b.tar.gz && rm v2.56b.tar.gz && \
     git clone --depth 1 https://github.com/carolemieux/afl-rb && \
     git clone --depth 1 https://github.com/mboehme/aflfast && \
     git clone --depth 1 https://github.com/reflare/afl-monitor && \
@@ -31,9 +31,9 @@ RUN if [ -z "$(ls -A /home/root/fuzz/install)" ] ; then \
 #build afl
 RUN ln -s /usr/bin/clang-3.8 /usr/bin/clang
 RUN ln -s /usr/bin/clang++-3.8 /usr/bin/clang++
-RUN cd afl-2.52b && make -j4 && cd qemu_mode && ./build_qemu_support.sh \
+RUN cd AFL-2.56b && make -j4 && cd qemu_mode && ./build_qemu_support.sh \
     && cd ../llvm_mode && make && cd ../ && make install
-RUN cp -r afl-2.52b afl-llvm-passes
+RUN cp -r AFL-2.56b afl-llvm-passes
 
 #build afl-rb
 RUN cd afl-rb && make -j4
