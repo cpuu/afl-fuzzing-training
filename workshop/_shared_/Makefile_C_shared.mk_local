@@ -24,13 +24,13 @@ ALL_OBJS	= $(OBJ) $(OBJ_ASAN) $(OBJ_MSAN) $(OBJ_COV) $(OBJ_LAF) $(OBJ_PLAIN)
 TOOLS_DIR	= ~/Desktop/tools
 SHARED_DIR	= ../_shared_
 
-GCC    	 	= $(TOOLS_DIR)/afl-2.52b/afl-gcc
-CLANG	 	= $(TOOLS_DIR)/afl-2.52b/afl-clang
-CLANG_FAST 	= $(TOOLS_DIR)/afl-2.52b/afl-clang-fast
+GCC    	 	= $(TOOLS_DIR)/AFL-2.56b/afl-gcc
+CLANG	 	= $(TOOLS_DIR)/AFL-2.56b/afl-clang
+CLANG_FAST 	= $(TOOLS_DIR)/AFL-2.56b/afl-clang-fast
 
 CC    	 	= $(CLANG_FAST)
 
-AFL_FUZZ 	= $(TOOLS_DIR)/afl-2.52b/afl-fuzz
+AFL_FUZZ 	= $(TOOLS_DIR)/AFL-2.56b/afl-fuzz
 AFL_FUZZ_PYTHIA	= $(TOOLS_DIR)/pythia/afl-fuzz
 AFL_FUZZ_RB 	= $(TOOLS_DIR)/afl-rb-master/afl-fuzz
 AFL_FUZZ_FAST 	= $(TOOLS_DIR)/aflfast-master/afl-fuzz
