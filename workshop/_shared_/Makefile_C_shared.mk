@@ -32,7 +32,7 @@ CLANG_FAST_LAF 	= $(TOOLS_DIR)/afl-llvm-passes/afl-clang-fast
 CC_PLAIN	= gcc
 CC    	 	= $(CLANG_FAST)
 
-AFL_FUZZ 	= $(TOOLS_DIR)/afl-2.52b/afl-fuzz
+AFL_FUZZ 	= $(TOOLS_DIR)/AFL-2.56b/afl-fuzz
 AFL_FUZZ_PYTHIA	= $(TOOLS_DIR)/pythia/afl-fuzz
 AFL_FUZZ_RB 	= $(TOOLS_DIR)/afl-rb/afl-fuzz
 AFL_FUZZ_FAST 	= $(TOOLS_DIR)/aflfast/afl-fuzz
